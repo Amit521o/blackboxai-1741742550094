@@ -1,0 +1,48 @@
+/* Custom styles to complement Tailwind CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Smooth transition for all hover effects */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Animation for feature cards */
+.feature-card {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    transition: transform 0.3s ease;
+}
+
+/* Custom focus styles */
+a:focus, button:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #dc2626;
+}
