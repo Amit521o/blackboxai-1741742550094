@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ultimate 3D MMA Fighter - Experience realistic combat action with stunning 3D graphics, fluid animations, and authentic MMA techniques.">
+    <title>Ultimate 3D MMA Fighter</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-[Poppins] bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-red-600">ULTIMATE MMA</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-red-600 transition-colors">Home</a>
+                    <a href="#features" class="hover:text-red-600 transition-colors">Features</a>
+                    <a href="#fighters" class="hover:text-red-600 transition-colors">Fighters</a>
+                    <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-2xl" id="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed top-0 right-0 w-64 h-full bg-gray-900 transform translate-x-full transition-transform duration-300 z-40">
+        <div class="p-6">
+            <button class="absolute top-4 right-4 text-2xl" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="flex flex-col space-y-6 mt-12">
+                <a href="#home" class="hover:text-red-600 transition-colors">Home</a>
+                <a href="#features" class="hover:text-red-600 transition-colors">Features</a>
+                <a href="#fighters" class="hover:text-red-600 transition-colors">Fighters</a>
+                <a href="#contact" class="hover:text-red-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/4761668/pexels-photo-4761668.jpeg')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Step into the <span class="text-red-600">Ultimate 3D MMA Cage</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Experience realistic combat action like never before with stunning 3D graphics, fluid animations, and authentic MMA techniques.
+            </p>
+            <a href="#features" class="inline-block bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors transform hover:scale-105 duration-300">
+                Explore Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-user-ninja"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Realistic 3D Fighters</h3>
+                    <p class="text-gray-400">Choose from a roster of lifelike MMA warriors, each with unique skills, fighting styles, and signature moves.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Dynamic Combat System</h3>
+                    <p class="text-gray-400">Master striking, grappling, and submissions with intuitive controls designed for smooth and responsive gameplay.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Career Mode & Tournaments</h3>
+                    <p class="text-gray-400">Rise through the ranks, train your fighter, and compete in intense championships.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Multiplayer Battles</h3>
+                    <p class="text-gray-400">Challenge players worldwide in action-packed online matches and prove you're the ultimate MMA champion.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Customizable Fighters</h3>
+                    <p class="text-gray-400">Upgrade stats, unlock new gear, and personalize your fighter's look to dominate the cage.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Immersive Arenas</h3>
+                    <p class="text-gray-400">Fight in realistic octagons and legendary MMA venues with detailed 3D environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-900 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Step into the Cage?</h2>
+            <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                Prepare for adrenaline-pumping battles and unleash your inner fighter in this next-level 3D MMA gaming experience!
+            </p>
+            <a href="#" class="inline-block bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-colors transform hover:scale-105 duration-300">
+                Pre-order Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 mb-4 md:mb-0">
+                    © 2024 Ultimate MMA Fighter. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
